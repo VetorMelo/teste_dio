@@ -51,6 +51,10 @@ body {
     
 }
 
+#pet1 {
+    width: 100%;
+}
+
 .content {
     background-color: rgb(250, 248, 244);
     min-height: 200px;

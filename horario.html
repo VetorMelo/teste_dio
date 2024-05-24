@@ -1,14 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐾 Clínica Veterinária Help to Pets</title>
-    <link rel="stylesheet" href="sobre.css">
-    
+    <link rel="stylesheet" href="horario.css">
+
 </head>
+
 <body>
     <div class="wrapper">
         <div class="menu">
@@ -24,34 +25,90 @@
             <div class="header">
 
                 <!-- Aqui vai o seu header -->
-                <img id="pet3" src="/imagens/gato_medico.jpg" alt="pata pet" >
+                <img id="pet3" src="/imagens/gato_medicoo.jpg" alt="pata pet">
 
 
             </div>
-    
+
             <div class="content">
-                
+
                 <!-- Aqui vai o seu conteúdo -->
-                <h1>Horários de atendimento</h1>
-
-                <h2>Temos os melhores profissionais formados na Univap de São José dos campos.</h2>
-
-                <p>Help to Pets é a numero um considerando uma pesquisa feita no vale do paraíba. Cerca de 90% das essoas ja ouviram falar da nossa veteriária ou ja levaram seu pet para providenciar seus devidos cuidados conosco. </p>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clinico Geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Castração</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Vacinação</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Vermifugação</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-    
+            <div class="formulario">
+                <h2>Entre em Contato</h2>
+                <form action="/submit_form" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required><br><br>
+
+                    <label for="tipo-servico">Tipo de Serviço:</label>
+                    <select id="tipo-servico" name="tipo-servico" required>
+                        <option value="limpeza">Clinico Geral</option>
+                        <option value="manutencao">Castração</option>
+                        <option value="jardinagem">Vacinação</option>
+                        <option value="jardinagem">Vermifugação</option>
+                    </select><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
             <div class="footer">
-                
+
                 <!-- Aqui vai o seu rodapé -->
 
-            <p>Contato para atendimento (12) 3955-0009</p>
+                <p>Contato para atendimento (12) 3955-0009</p>
 
-            <p>helptopets@gmail.com</p>
+                <p>helptopets@gmail.com</p>
 
-            <p>CEP: 12323-000 Rua dos Pets, Jd dos Encontrados nº 10 - Jacareí </p>
+                <p>CEP: 12323-000 Rua dos Pets, Jd dos Encontrados nº 10 - Jacareí </p>
 
 
             </div>
         </div>
     </div>
 </body>
+
 </html>
